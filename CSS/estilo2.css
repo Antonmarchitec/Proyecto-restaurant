@@ -1,0 +1,2317 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Antonio', sans-serif;
+}
+body{
+    
+}
+
+
+/*************REJILLA CSS GRID**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contenedor{
+    width: 100%;
+    max-width: 1150px;
+    height: 1000px;
+    margin: auto;
+    display: grid;
+    grid-gap:2px;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "afiche   header "
+                         "afiche   ofertas"
+                         "afiche   sobre_cocinas"
+                         "afiche   clientes"
+                         "afiche   footer";
+
+}
+.contenedor .afiche{
+    ackground: rgb(255, 0, 128);
+    display: grid;
+    grid-area: afiche;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+.contenedor .header{
+    ackground: rgb(225, 241, 78);
+    display: grid;
+    grid-area: header;
+}
+
+.contenedor .ofertas{
+    
+    ackground: rgb(140, 231, 79);
+    display: grid;
+    grid-area:ofertas;
+}
+
+.contenedor .sobre_cocinas{
+    
+    ackground: rgb(30, 197, 226);
+    display: grid;
+    grid-area:sobre_cocinas ;
+   
+}
+
+.contenedor .clientes{
+   
+    ackground: rgb(44, 110, 196);
+    display: grid;
+    grid-area:clientes ;
+   
+}
+
+.contenedor .footer{
+    ackground: rgb(122, 55, 55);
+    display: grid;
+    grid-area: footer;
+   
+}
+
+
+
+
+
+/*************ESTILOS CSS**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.MenuResponsive{
+    display: none;
+}
+.MenuResponsive{
+    width: 100%;
+    height: 100px;
+    background: grey;
+}
+.MenuResponsive_info{
+    display: none;
+}
+
+
+/*************CONTENEDOR-AFICHE**************/
+/******************************************/
+/******************************************/
+/******************************************/
+
+.contAfiche{
+    width: 300px;
+    height: 500px;
+    ackground: rgb(255, 255, 255);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+/*************LOGO**************/
+/******************************************/
+
+.contAfiche_logo{
+    width: 100%;
+    ackground: grey;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+
+
+
+/*************MENU**************/
+/******************************************/
+.contAfiche_menu{
+    width: 100%;
+    
+    ackground: rgb(219, 66, 66);
+}
+.nav{
+    width: 100%;
+   
+}
+.nav .ul{
+    
+    list-style: none;
+    
+}
+.nav .ul .li{
+    ackground: violet;
+    width:250px;
+    margin: 2px auto;
+    padding: 2px 1px;
+    text-align: center;
+}
+.nav .ul .li a{
+    text-decoration: none;
+    box-shadow: 0px 0px 0px rgb(41, 41, 41);
+    transition:box-shadow 0.2s ease-in;
+    color: grey;
+}
+.nav .ul .li a:hover{
+    box-shadow: 0px 2px 0px rgb(41, 41, 41);
+}
+
+
+
+/*************PIE_DE_TEXTO  **************/
+/******************************************/
+.contAfiche_pieTexto{
+    width: 100%;
+    height: 100px;
+    ackground: rgb(53, 119, 150);
+}
+.contAfiche_pieTexto_title{
+    text-align: center;
+    font-size: 25px;
+}
+.contAfiche_pieTexto_texto{
+    margin-top:15px;
+    text-align: center;
+}
+
+
+
+
+
+/*************CONTENEDOR-HEADER**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contHeader{
+    width:100%;
+    height: 700px;
+    ackground: rgb(202, 202, 248);
+    position: relative;
+}
+
+.contHeader_cajaAzul{
+    width: 700px;
+    height: 700px;
+    background: rgb(3, 3, 68);
+    position: absolute;
+    left: 0;
+}
+
+.contHeader_image{
+    width: 700px;
+    height: 600px;
+    background-image: url(../IMG/CARNE2.jpg);
+    background-size: 100% 100%;
+    position: absolute;
+    right: 0;
+}
+.contHeader_letrasBotones{
+    width: 400px;
+    
+    margin-top:50px;
+    margin-left: 150px;
+    ackground: rgb(209, 89, 89);
+    position: absolute;
+    padding: 20px;   
+}
+.contHeader_letrasBotones_title{
+    font-size: 50px;
+    color: white;
+}
+.botonera{
+    ackground: yellow;
+    
+}
+.botonera .botonera_btnMenu{
+    width: 150px;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    color:black;
+    border-radius: 10px;
+    transition-property:background,colo,box-shadow ;
+    transition-duration:0.2s;
+}
+.botonera .botonera_btnMenu:hover{
+    background: transparent;
+    color: white;
+    box-shadow: 0px 3px 0px rgb(43, 43, 43);
+}
+.botonera_btnEspeciales{
+    width: 150px;
+    height: 50px;
+    background:transparent;
+    color:white;
+    border-radius: 10px;
+    transition-property:background,color,box-shadow ;
+    transition-duration:0.2s;
+}
+.botonera .botonera_btnEspeciales:hover{
+    background: white;
+    color: black;
+    box-shadow: 0px 3px 0px rgb(43, 43, 43);
+}
+
+
+
+
+/*************CONTENEDOR-OFERTAS**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contOfertas{
+    padding: 100px 1px;
+    width: 100%;
+    ackground: rgb(179, 179, 179);
+}
+.contOfertas_nota{
+    text-align: center;
+    padding-top: 30px;
+
+}
+.contOfertas_title{
+    margin-top: 10px;
+    text-align: center;
+}
+.contCuadros{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding: 1px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.contCuadros_cajas{
+    width: 200px;
+    height: 200px;
+    ackground: cyan;
+   
+}
+.contCuadros_cajas_texto{
+    padding: 10px;
+}
+.contCuadros_cajas_texto_title{
+   text-align: center;
+   
+}
+.contCuadros_cajas_texto_parrafo{
+    margin-top: 10px;
+   text-align: center;
+}
+
+
+
+/*************CONTENEDOR-SOBRE COCINAS**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contSobreCocinas{
+    margin-top:50px;
+    width: 100%;
+    height: 500px;
+    ackground: darkgreen;
+    position: relative;
+}
+.contSobreCocinas_cajaTexto{
+    width: 350px;
+    height:500px ;
+    
+    position: absolute  ;
+    padding:20px ;
+}
+.contSobreCocinas_cajaTexto_sobreN{
+
+}
+.contSobreCocinas_cajaTexto_sobreCocina{
+    margin-top: 5px;
+    font-size: 50px;
+}
+.contSobreCocinas_cajaTexto_parrafo{
+    margin-top: 10px;
+    text-align: justify;
+}
+.botonVer{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgb(42, 42, 105);
+    color: white;
+    cursor: pointer;
+}
+
+.contSobreCocinas_cajaAzul{
+    width: 400px;
+    height: 500px;
+    background: rgb(3, 3, 68);
+    position: absolute;
+    right: 0;
+}
+.contSobreCocinas_carrusel{
+    width: 450px;
+    height: 250px;
+    background: darkgreen;
+    position: absolute;
+    right: 30px;
+    top: 100px;
+}
+
+
+
+
+
+/*************CONTENEDOR-CLIENTES**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contClientes{
+    margin-top: 50px;
+    width: 100%;
+    padding: 10px 1px;
+    ackground: rgb(238, 95, 95);
+}
+.contClientes_titleP{
+    text-align: center;
+}   
+.contClientes_clientesFelices{
+    margin-top:-5px;
+    text-align: center;
+}
+.contClientes_testimoniosgalery{
+    width: 100%;
+    padding: 10px;
+    ackground: rgba(0, 255, 255, 0.616);
+}
+
+
+
+
+
+
+
+/*************CONTENEDOR-FOOTER**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contFooter{
+   width:100%;
+   padding: 20px;
+   background: rgb(43, 43, 43);
+   text-align: center;
+   padding: 20px 150px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+.contFooter_enlace{
+   color: white;
+   text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 720px) {
+    body {
+      background-color: lightblue;
+    }
+    
+/*************REJILLA CSS GRID**************/
+/******************************************/
+/******************************************/
+/******************************************/
+
+
+   
+/*************ESTILOS MENU RESPONSIVE**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.MenuResponsive{
+    display: block;
+    width: 100%;
+    height: 150px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.MenuResponsive_logo{
+width: 100px;
+height: 100px;
+margin-left: 20px;
+
+}
+
+.MenuResponsive_enlace{
+    width: 500px;
+        
+}
+.nav2{
+    
+}
+.nav2 .ul2{
+    
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.nav2 .ul2 .li2{
+    margin: auto;
+    width: 200px;
+    text-align: center;
+    margin: 0px 1px;
+    padding: 5px 10px;
+}
+.nav2 .ul2 .li2 .a2{
+    color: rgb(41, 41, 41);
+    text-decoration: none;
+    box-shadow: 0px 0px 0px rgb(37, 37, 37);
+    transition:  box-shadow 0.2s ease-in;
+}
+.nav2 .ul2 .li2 .a2:hover{
+    box-shadow: 0px 2px 0px rgb(39, 39, 39) ;
+}
+.MenuResponsive_info{
+    width: 200px;
+    height: 100px;
+    background: rgb(0, 68, 255);
+}
+/*******************************/
+.MenuResponsive_info{
+    display: block;
+    width: 100%;
+    background: rgb(3, 3, 68);
+    padding: 10px 1px;
+    margin-bottom: 10px;
+}
+.MenuResponsive_info_title{
+    text-align: center;
+    color: white;
+    font-size: 23px;
+}
+.MenuResponsive_info_texto{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+/*************CONTENEDOR-AFICHE**************/
+/******************************************/
+/******************************************/
+/******************************************/
+
+.contAfiche{
+    width: 250px;
+    height: 500px;
+    background: rgb(228, 228, 228);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 99;
+    padding: 20px;
+    display: none;
+}
+
+
+/*************LOGO**************/
+/******************************************/
+
+.contAfiche_logo{
+    width: 100%;
+    ackground: grey;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+
+/*************MENU**************/
+/******************************************/
+.contAfiche_menu{
+    width: 100%;
+    
+    background: rgb(255, 255, 255);
+}
+.nav{
+    width: 100%;
+    ackground: greenyellow;
+}
+.nav .ul{
+    width: 100%;
+    ackground: hotpink;
+    list-style: none;
+    
+}
+.nav .ul .li{
+    
+    width:200px;
+    margin-left: -25px;
+    padding: 2px 1px;
+    text-align: center;
+}
+.nav .ul .li a{
+    text-decoration: none;
+    box-shadow: 0px 0px 0px rgb(41, 41, 41);
+    transition:box-shadow 0.2s ease-in;
+    color: grey;
+}
+.nav .ul .li a:hover{
+    box-shadow: 0px 2px 0px rgb(41, 41, 41);
+}
+
+
+
+/*************PIE_DE_TEXTO  **************/
+/******************************************/
+/*.contAfiche_pieTexto{
+    width: 100%;
+    height: 100px;
+    ackground: rgb(53, 119, 150);
+}
+.contAfiche_pieTexto_title{
+    text-align: center;
+    font-size: 25px;
+}
+.contAfiche_pieTexto_texto{
+    margin-top:15px;
+    text-align: center;
+}*/
+
+
+
+
+/*************CONTENEDOR-HEADER**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contHeader{
+    width:100%;
+    height: 500px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+}
+
+.contHeader_cajaAzul{
+    width: 600px;
+    height: 500px;
+    background: rgb(3, 3, 68);
+    position: absolute;
+    left: 0;
+}
+
+.contHeader_image{
+    width: 600px;
+    height: 400px;
+    background-image: url(../IMG/CARNE2.jpg);
+    background-size: 100% 100%;
+    position: absolute;
+    right: 0;
+}
+
+
+
+/*************CONTENEDOR-OFERTAS**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contOfertas{
+    margin-top:250px;
+    padding: 50px 1px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+}
+/*.contOfertas_nota{
+    text-align: center;
+    padding-top: 30px;
+
+}*/
+/*.contOfertas_title{
+    margin-top: 10px;
+    text-align: center;
+}*/
+.contCuadros{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding: 5px 60px;
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.contCuadros_cajas{
+    width: 280px;
+    height: 280px;
+    background: rgb(255, 255, 255);
+   
+}
+.contCuadros_cajas_texto{
+    padding: 10px;
+}
+.contCuadros_cajas_texto_title{
+   text-align: center;
+   
+}
+.contCuadros_cajas_texto_parrafo{
+    margin-top: 10px;
+   text-align: center;
+}
+
+
+
+/*************CONTENEDOR-SOBRE COCINAS**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contSobreCocinas{
+    margin-top: 1370px;
+    width: 100%;
+    
+    background: rgb(235, 235, 235);
+    position: absolute;
+    left: 0;
+}
+
+.contSobreCocinas_cajaAzul{
+    width: 350px;
+    height: 500px;
+    background: rgb(3, 3, 68);
+    position: absolute;
+    right: 0;
+}
+.contSobreCocinas_carrusel{
+    width: 300px;
+    height: 150px;
+    position:absolute;
+    right: 20px;
+    top:150px;
+}
+
+
+/*************CONTENEDOR-CLIENTES**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contClientes{
+    margin-top: 1700px;
+    width: 100%;
+    padding: 10px 1px;
+    position: absolute;
+    left: 0;
+}
+
+
+
+/*************CONTENEDOR-FOOTER**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contFooter{
+   margin-top: 1900px;
+   width:100%;
+   padding: 20px;
+   background: rgb(43, 43, 43);
+   text-align: center;
+   padding: 20px 150px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   position: absolute;
+   left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+    body {
+      background-color: lightblue;
+    }
+    
+/*************REJILLA CSS GRID**************/
+/******************************************/
+/******************************************/
+/******************************************/
+
+
+   
+/*************ESTILOS MENU RESPONSIVE**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.MenuResponsive{
+    display: block;
+    width: 100%;
+    height: 150px;
+   
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.MenuResponsive_logo{
+width: 100px;
+height: 100px;
+margin-left: 20px;
+
+}
+
+.MenuResponsive_enlace{
+    width: 100%;
+  
+}
+.nav2{
+   
+}
+.nav2 .ul2{
+   
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.nav2 .ul2 .li2{
+    margin: auto;
+    width: 200px;
+    text-align: center;
+    margin: 0px 1px;
+    padding: 5px 10px;
+    margin-left: -25px;
+}
+.nav2 .ul2 .li2 .a2{
+    color: rgb(41, 41, 41);
+    text-decoration: none;
+    box-shadow: 0px 0px 0px rgb(37, 37, 37);
+    transition:  box-shadow 0.2s ease-in;
+}
+.nav2 .ul2 .li2 .a2:hover{
+    box-shadow: 0px 2px 0px rgb(39, 39, 39) ;
+}
+
+/*******************************/
+.MenuResponsive_info{
+    display: block;
+    width: 100%;
+    background: rgb(3, 3, 68);
+    margin-bottom: 10px;
+}
+.MenuResponsive_info_title{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.MenuResponsive_info_texto{
+    text-align: center;
+    color: white;
+    font-size: 11px;
+}
+
+
+
+
+
+/*************CONTENEDOR-HEADER**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contHeader{
+    width:100%;
+    height: 350px;
+    background: rgb(235, 235, 235);
+  
+}
+
+.contHeader_cajaAzul{
+   display: none;
+}
+
+.contHeader_image{
+    width: 250px;
+    height: 200px;
+    background-image: url(../IMG/CARNE2.jpg);
+    background-size: 100% 100%;
+    position: absolute;
+    right:0;
+    top: 100px;
+    z-index: 99;
+}
+
+.contHeader_letrasBotones{
+    width: 250px;
+    margin-top:0px;
+    margin-left:0px;
+    background: rgb(2, 2, 59);
+    position: absolute;
+    left: 0px;
+    padding: 20px;   
+}
+.contHeader_letrasBotones_title{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.botonera{
+    
+    margin-top: 50px;
+    
+}
+.botonera .botonera_btnMenu{
+    width: 120px;
+    height: 30px;
+    background: rgb(255, 255, 255);
+    color:black;
+    border-radius: 10px;
+    transition-property:background,colo,box-shadow ;
+    transition-duration:0.2s;
+}
+.botonera .botonera_btnMenu:hover{
+    background: transparent;
+    color: white;
+    box-shadow: 0px 3px 0px rgb(43, 43, 43);
+}
+.botonera_btnEspeciales{
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+    background:transparent;
+    color:white;
+    border-radius: 10px;
+    transition-property:background,color,box-shadow ;
+    transition-duration:0.2s;
+}
+.botonera .botonera_btnEspeciales:hover{
+    background: white;
+    color: black;
+    box-shadow: 0px 3px 0px rgb(43, 43, 43);
+}
+
+
+
+/*************CONTENEDOR-OFERTAS**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contOfertas{
+    margin-top:100px;
+    padding: 50px 1px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+}
+/*.contOfertas_nota{
+    text-align: center;
+    padding-top: 30px;
+
+}*/
+/*.contOfertas_title{
+    margin-top: 10px;
+    text-align: center;
+}*/
+.contCuadros{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding: 5px 40px;
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.contCuadros_cajas{
+    width: 150px;
+    height:150px;
+    background: rgb(255, 255, 255);
+   
+}
+.contCuadros_cajas_texto{
+    padding: 10px;
+}
+.contCuadros_cajas_texto_title{
+   text-align: center;
+   font-size: 15px;
+   font-weight: bold;
+}
+.contCuadros_cajas_texto_parrafo{
+    margin-top: 10px;
+   text-align: center;
+   font-size: 11px;
+}
+
+
+
+
+
+
+/*************CONTENEDOR-SOBRE COCINAS**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contSobreCocinas{
+    margin-top: 700px;
+    width: 100%;
+    height: 405px;
+   
+    position: absolute;
+    left: 0;
+}
+
+.contSobreCocinas_cajaAzul{
+    width: 100%;
+    height: 400px;
+    background: rgb(3, 3, 68);
+    position: absolute;
+    right: 0;
+}
+.contSobreCocinas_carrusel{
+    width: 250px;
+    height: 150px;
+    position:absolute;
+    right: 20px;
+    top:200px;
+}
+
+.contSobreCocinas_cajaTexto{
+    width:100%;
+    height:200px ;
+    position: absolute  ;
+    padding:20px ;
+    z-index: 99;
+}
+.contSobreCocinas_cajaTexto_sobreN{
+  color: white;
+}
+.contSobreCocinas_cajaTexto_sobreCocina{
+    margin-top: 5px;
+    font-size: 30px;
+    color: white;
+}
+.contSobreCocinas_cajaTexto_parrafo{
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 11px;
+    color: white;
+}
+.botonVer{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgb(42, 42, 105);
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+/*************CONTENEDOR-CLIENTES**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contClientes{
+    
+    margin-top: 900px;
+    width: 100%;
+    padding: 10px 1px;
+    position: absolute;
+    left: 0;
+}
+
+
+
+/*************CONTENEDOR-FOOTER**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contFooter{
+   background: yellow;
+   margin-top: 1000px;
+   width:100%;
+   padding: 20px;
+   background: rgb(43, 43, 43);
+   text-align: center;
+   padding: 20px 150px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   position: absolute;
+   left: 0;
+}
+.contFooter_enlace{
+    color: white;
+    text-align: center;
+    padding: 1px 20px;
+    margin-left: -30px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+@media only screen and (max-width: 423px) {
+    body {
+      background-color: lightblue;
+    }
+    
+/*************REJILLA CSS GRID**************/
+/******************************************/
+/******************************************/
+/******************************************/
+
+
+   
+/*************ESTILOS MENU RESPONSIVE**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.MenuResponsive{
+    display: block;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.MenuResponsive_logo{
+width: 100px;
+height: 100px;
+margin-left: 20px;
+
+}
+
+.MenuResponsive_enlace{
+    width: 100%;
+  
+}
+.nav2{
+   
+}
+.nav2 .ul2{
+   
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.nav2 .ul2 .li2{
+    margin: auto;
+    width: 200px;
+    text-align: center;
+    margin: 0px 1px;
+    padding: 5px 10px;
+    margin-left: -25px;
+}
+.nav2 .ul2 .li2 .a2{
+    color: rgb(41, 41, 41);
+    text-decoration: none;
+    box-shadow: 0px 0px 0px rgb(37, 37, 37);
+    transition:  box-shadow 0.2s ease-in;
+}
+.nav2 .ul2 .li2 .a2:hover{
+    box-shadow: 0px 2px 0px rgb(39, 39, 39) ;
+}
+
+/*******************************/
+.MenuResponsive_info{
+    display: block;
+    width: 100%;
+    background: rgb(3, 3, 68);
+    margin-bottom: 10px;
+}
+.MenuResponsive_info_title{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.MenuResponsive_info_texto{
+    text-align: center;
+    color: white;
+    font-size: 11px;
+}
+
+
+
+
+
+/*************CONTENEDOR-HEADER**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contHeader{
+    width:100%;
+    height: 350px;
+    background: rgb(235, 235, 235);
+  
+}
+
+.contHeader_cajaAzul{
+   display: none;
+}
+
+.contHeader_image{
+    width: 200px;
+    height: 150px;
+    background-image: url(../IMG/CARNE2.jpg);
+    background-size: 100% 100%;
+    position: absolute;
+    right:0;
+    top: 120px;
+    z-index: 99;
+}
+
+.contHeader_letrasBotones{
+    width: 250px;
+    margin-top:0px;
+    margin-left:0px;
+    background: rgb(2, 2, 59);
+    position: absolute;
+    left: 0px;
+    padding: 20px;   
+}
+.contHeader_letrasBotones_title{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.botonera{
+    
+    margin-top: 50px;
+    
+}
+.botonera .botonera_btnMenu{
+    width: 120px;
+    height: 30px;
+    background: rgb(255, 255, 255);
+    color:black;
+    border-radius: 10px;
+    transition-property:background,colo,box-shadow ;
+    transition-duration:0.2s;
+}
+.botonera .botonera_btnMenu:hover{
+    background: transparent;
+    color: white;
+    box-shadow: 0px 3px 0px rgb(43, 43, 43);
+}
+.botonera_btnEspeciales{
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+    background:transparent;
+    color:white;
+    border-radius: 10px;
+    transition-property:background,color,box-shadow ;
+    transition-duration:0.2s;
+}
+.botonera .botonera_btnEspeciales:hover{
+    background: white;
+    color: black;
+    box-shadow: 0px 3px 0px rgb(43, 43, 43);
+}
+
+
+
+/*************CONTENEDOR-OFERTAS**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contOfertas{
+    margin-top:100px;
+    padding: 50px 1px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+}
+/*.contOfertas_nota{
+    text-align: center;
+    padding-top: 30px;
+
+}*/
+/*.contOfertas_title{
+    margin-top: 10px;
+    text-align: center;
+}*/
+.contCuadros{
+    width: 100%;
+  
+    padding: 5px 40px;
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.contCuadros_cajas{
+    width: 150px;
+    height:150px;
+    background: rgb(255, 255, 255);
+   
+}
+.contCuadros_cajas_texto{
+    padding: 10px;
+}
+.contCuadros_cajas_texto_title{
+   text-align: center;
+   font-size: 15px;
+   font-weight: bold;
+}
+.contCuadros_cajas_texto_parrafo{
+    margin-top: 10px;
+   text-align: center;
+   font-size: 11px;
+}
+
+
+
+
+
+
+/*************CONTENEDOR-SOBRE COCINAS**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contSobreCocinas{
+    margin-top: 700px;
+    width: 100%;
+    height: 405px;
+   
+    position: absolute;
+    left: 0;
+}
+
+.contSobreCocinas_cajaAzul{
+    width: 100%;
+    height: 400px;
+    background: rgb(3, 3, 68);
+    position: absolute;
+    right: 0;
+}
+.contSobreCocinas_carrusel{
+    width: 200px;
+    height: 100px;
+    position:absolute;
+    right: 20px;
+    top:200px;
+}
+
+.contSobreCocinas_cajaTexto{
+    width:100%;
+    height:200px ;
+    position: absolute  ;
+    padding:20px ;
+    z-index: 99;
+}
+.contSobreCocinas_cajaTexto_sobreN{
+  color: white;
+}
+.contSobreCocinas_cajaTexto_sobreCocina{
+    margin-top: 5px;
+    font-size: 30px;
+    color: white;
+}
+.contSobreCocinas_cajaTexto_parrafo{
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 11px;
+    color: white;
+}
+.botonVer{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgb(42, 42, 105);
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+/*************CONTENEDOR-CLIENTES**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contClientes{
+    
+    margin-top: 900px;
+    width: 100%;
+    padding: 10px 1px;
+    position: absolute;
+    left: 0;
+}
+
+
+
+/*************CONTENEDOR-FOOTER**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contFooter{
+   background: yellow;
+   margin-top: 1000px;
+   width:100%;
+   padding: 20px;
+   background: rgb(43, 43, 43);
+   text-align: center;
+   padding: 20px 150px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   position: absolute;
+   left: 0;
+}
+.contFooter_enlace{
+    color: white;
+    text-align: center;
+    padding: 1px 20px;
+    position: relative;
+    left: -30px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+@media only screen and (max-width: 380px) {
+    body {
+      background-color: lightblue;
+    }
+    
+/*************REJILLA CSS GRID**************/
+/******************************************/
+/******************************************/
+/******************************************/
+
+
+   
+/*************ESTILOS MENU RESPONSIVE**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.MenuResponsive{
+    display: block;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.MenuResponsive_logo{
+width: 100px;
+height: 100px;
+margin-left: 20px;
+
+}
+
+.MenuResponsive_enlace{
+    width: 100%;
+  
+}
+.nav2{
+   
+}
+.nav2 .ul2{
+   
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.nav2 .ul2 .li2{
+    margin: auto;
+    width: 200px;
+    text-align: center;
+    margin: 0px 1px;
+    padding: 5px 10px;
+    margin-left: -25px;
+}
+.nav2 .ul2 .li2 .a2{
+    color: rgb(41, 41, 41);
+    text-decoration: none;
+    box-shadow: 0px 0px 0px rgb(37, 37, 37);
+    transition:  box-shadow 0.2s ease-in;
+}
+.nav2 .ul2 .li2 .a2:hover{
+    box-shadow: 0px 2px 0px rgb(39, 39, 39) ;
+}
+
+/*******************************/
+.MenuResponsive_info{
+    display: block;
+    width: 100%;
+    background: rgb(3, 3, 68);
+    margin-bottom: 10px;
+}
+.MenuResponsive_info_title{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.MenuResponsive_info_texto{
+    text-align: center;
+    color: white;
+    font-size: 11px;
+}
+
+
+
+
+
+/*************CONTENEDOR-HEADER**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contHeader{
+    width:100%;
+    height: 350px;
+    background: rgb(235, 235, 235);
+  
+}
+
+.contHeader_cajaAzul{
+   display: none;
+}
+
+.contHeader_image{
+    width: 180px;
+    height: 200px;
+    background-image: url(../IMG/CARNE2.jpg);
+    background-size: 100% 100%;
+    position: absolute;
+    right:0;
+    top: 100px;
+    z-index: 99;
+}
+
+.contHeader_letrasBotones{
+    width: 250px;
+    margin-top:0px;
+    margin-left:0px;
+    background: rgb(2, 2, 59);
+    position: absolute;
+    left: 0px;
+    padding: 20px;   
+}
+.contHeader_letrasBotones_title{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.botonera{
+    
+    margin-top: 50px;
+    
+}
+.botonera .botonera_btnMenu{
+    width: 120px;
+    height: 30px;
+    background: rgb(255, 255, 255);
+    color:black;
+    border-radius: 10px;
+    transition-property:background,colo,box-shadow ;
+    transition-duration:0.2s;
+}
+.botonera .botonera_btnMenu:hover{
+    background: transparent;
+    color: white;
+    box-shadow: 0px 3px 0px rgb(43, 43, 43);
+}
+.botonera_btnEspeciales{
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+    background:transparent;
+    color:white;
+    border-radius: 10px;
+    transition-property:background,color,box-shadow ;
+    transition-duration:0.2s;
+}
+.botonera .botonera_btnEspeciales:hover{
+    background: white;
+    color: black;
+    box-shadow: 0px 3px 0px rgb(43, 43, 43);
+}
+
+
+
+/*************CONTENEDOR-OFERTAS**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contOfertas{
+    margin-top:100px;
+    padding: 50px 1px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+}
+/*.contOfertas_nota{
+    text-align: center;
+    padding-top: 30px;
+
+}*/
+/*.contOfertas_title{
+    margin-top: 10px;
+    text-align: center;
+}*/
+.contCuadros{
+    width: 100%;
+   
+    padding: 5px 28px;
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.contCuadros_cajas{
+    width: 150px;
+    height:150px;
+    background: rgb(255, 255, 255);
+   
+}
+.contCuadros_cajas_texto{
+    padding: 10px;
+}
+.contCuadros_cajas_texto_title{
+   text-align: center;
+   font-size: 15px;
+   font-weight: bold;
+}
+.contCuadros_cajas_texto_parrafo{
+    margin-top: 10px;
+   text-align: center;
+   font-size: 11px;
+}
+
+
+
+
+
+
+/*************CONTENEDOR-SOBRE COCINAS**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contSobreCocinas{
+    margin-top: 700px;
+    width: 100%;
+    height: 405px;
+   
+    position: absolute;
+    left: 0;
+}
+
+.contSobreCocinas_cajaAzul{
+    width: 100%;
+    height: 400px;
+    background: rgb(3, 3, 68);
+    position: absolute;
+    right: 0;
+}
+.contSobreCocinas_carrusel{
+    width: 180px;
+    height: 100px;
+    position:absolute;
+    right: 20px;
+    top:220px;
+}
+
+.contSobreCocinas_cajaTexto{
+    width:100%;
+    height:200px ;
+    position: absolute  ;
+    padding:20px ;
+    z-index: 99;
+}
+.contSobreCocinas_cajaTexto_sobreN{
+  color: white;
+}
+.contSobreCocinas_cajaTexto_sobreCocina{
+    margin-top: 5px;
+    font-size: 30px;
+    color: white;
+}
+.contSobreCocinas_cajaTexto_parrafo{
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 11px;
+    color: white;
+}
+.botonVer{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgb(42, 42, 105);
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+/*************CONTENEDOR-CLIENTES**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contClientes{
+    
+    margin-top: 900px;
+    width: 100%;
+    padding: 10px 1px;
+    position: absolute;
+    left: 0;
+}
+
+
+
+/*************CONTENEDOR-FOOTER**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contFooter{
+   background: yellow;
+   margin-top: 1000px;
+   width:100%;
+   padding: 20px;
+   background: rgb(43, 43, 43);
+   text-align: center;
+   padding: 20px 150px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   position: absolute;
+   left: 0;
+}
+.contFooter_enlace{
+    color: white;
+    text-align: center;
+    padding: 1px 20px;
+    position: relative;
+    left: -60px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+@media only screen and (max-width: 330px) {
+    body {
+      background-color: lightblue;
+    }
+    
+/*************REJILLA CSS GRID**************/
+/******************************************/
+/******************************************/
+/******************************************/
+
+
+   
+/*************ESTILOS MENU RESPONSIVE**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.MenuResponsive{
+    display: block;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.MenuResponsive_logo{
+width: 100px;
+height: 100px;
+margin-left: 20px;
+
+}
+
+.MenuResponsive_enlace{
+    width: 100%;
+  
+}
+.nav2{
+   
+}
+.nav2 .ul2{
+   
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.nav2 .ul2 .li2{
+    margin: auto;
+    width: 200px;
+    text-align: center;
+    margin: 0px 1px;
+    padding: 5px 10px;
+    margin-left: -25px;
+}
+.nav2 .ul2 .li2 .a2{
+    color: rgb(41, 41, 41);
+    text-decoration: none;
+    box-shadow: 0px 0px 0px rgb(37, 37, 37);
+    transition:  box-shadow 0.2s ease-in;
+}
+.nav2 .ul2 .li2 .a2:hover{
+    box-shadow: 0px 2px 0px rgb(39, 39, 39) ;
+}
+
+/*******************************/
+.MenuResponsive_info{
+    display: block;
+    width: 100%;
+    background: rgb(3, 3, 68);
+    margin-bottom: 10px;
+}
+.MenuResponsive_info_title{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.MenuResponsive_info_texto{
+    text-align: center;
+    color: white;
+    font-size: 11px;
+}
+
+
+
+
+
+/*************CONTENEDOR-HEADER**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contHeader{
+    width:100%;
+    height: 350px;
+    background: rgb(235, 235, 235);
+  
+}
+
+.contHeader_cajaAzul{
+   display: none;
+}
+
+.contHeader_image{
+    width: 250px;
+    height: 200px;
+    background-image: url(../IMG/CARNE2.jpg);
+    background-size: 100% 100%;
+    position: absolute;
+    right:0;
+    top: 100px;
+    z-index: 99;
+}
+
+.contHeader_letrasBotones{
+    width: 250px;
+    margin-top:0px;
+    margin-left:0px;
+    background: rgb(2, 2, 59);
+    position: absolute;
+    left: 0px;
+    padding: 20px;   
+}
+.contHeader_letrasBotones_title{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.botonera{
+    
+    margin-top: 50px;
+    
+}
+.botonera .botonera_btnMenu{
+    width: 120px;
+    height: 30px;
+    background: rgb(255, 255, 255);
+    color:black;
+    border-radius: 10px;
+    transition-property:background,colo,box-shadow ;
+    transition-duration:0.2s;
+}
+.botonera .botonera_btnMenu:hover{
+    background: transparent;
+    color: white;
+    box-shadow: 0px 3px 0px rgb(43, 43, 43);
+}
+.botonera_btnEspeciales{
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+    background:transparent;
+    color:white;
+    border-radius: 10px;
+    transition-property:background,color,box-shadow ;
+    transition-duration:0.2s;
+}
+.botonera .botonera_btnEspeciales:hover{
+    background: white;
+    color: black;
+    box-shadow: 0px 3px 0px rgb(43, 43, 43);
+}
+
+
+
+/*************CONTENEDOR-OFERTAS**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contOfertas{
+    margin-top:100px;
+    padding: 50px 1px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+}
+/*.contOfertas_nota{
+    text-align: center;
+    padding-top: 30px;
+
+}*/
+/*.contOfertas_title{
+    margin-top: 10px;
+    text-align: center;
+}*/
+.contCuadros{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding: 5px 40px;
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.contCuadros_cajas{
+    width: 150px;
+    height:150px;
+    background: rgb(255, 255, 255);
+   
+}
+.contCuadros_cajas_texto{
+    padding: 10px;
+}
+.contCuadros_cajas_texto_title{
+   text-align: center;
+   font-size: 15px;
+   font-weight: bold;
+}
+.contCuadros_cajas_texto_parrafo{
+    margin-top: 10px;
+   text-align: center;
+   font-size: 11px;
+}
+
+
+
+
+
+
+/*************CONTENEDOR-SOBRE COCINAS**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contSobreCocinas{
+    margin-top: 700px;
+    width: 100%;
+    height: 405px;
+   
+    position: absolute;
+    left: 0;
+}
+
+.contSobreCocinas_cajaAzul{
+    width: 100%;
+    height: 400px;
+    background: rgb(3, 3, 68);
+    position: absolute;
+    right: 0;
+}
+.contSobreCocinas_carrusel{
+    width: 250px;
+    height: 150px;
+    position:absolute;
+    right: 20px;
+    top:200px;
+}
+
+.contSobreCocinas_cajaTexto{
+    width:100%;
+    height:200px ;
+    position: absolute  ;
+    padding:20px ;
+    z-index: 99;
+}
+.contSobreCocinas_cajaTexto_sobreN{
+  color: white;
+}
+.contSobreCocinas_cajaTexto_sobreCocina{
+    margin-top: 5px;
+    font-size: 30px;
+    color: white;
+}
+.contSobreCocinas_cajaTexto_parrafo{
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 11px;
+    color: white;
+}
+.botonVer{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgb(42, 42, 105);
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+/*************CONTENEDOR-CLIENTES**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contClientes{
+    
+    margin-top: 900px;
+    width: 100%;
+    padding: 10px 1px;
+    position: absolute;
+    left: 0;
+}
+
+
+
+/*************CONTENEDOR-FOOTER**************/
+/******************************************/
+/******************************************/
+/******************************************/
+.contFooter{
+   background: yellow;
+   margin-top: 1000px;
+   width:100%;
+   padding: 20px;
+   background: rgb(43, 43, 43);
+   text-align: center;
+   padding: 20px 150px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   position: absolute;
+   left: 0;
+}
+.contFooter_enlace{
+    color: white;
+    text-align: center;
+    padding: 1px 20px;
+    margin-left: -30px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+   
+    
+
+
+
+  }
